@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
-	model = "BT60";
+	model = "Zaki's BT60v2";
 	compatible = "polarityworks,bt60v2";
 
 	chosen {
