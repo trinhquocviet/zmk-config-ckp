@@ -1,3 +1,14 @@
+# Layout
+```
+------------------------------------------------------------------------------------------
+| ESC |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  | BKSP | ` |
+| TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |    BSLH |
+| CAPS  |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |        ENTER |
+|  SHIFT    |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  | /   |    UP    | DEL |
+|  CTL  |  ALT  |  CMD  |            SPACE               | 1  |  LEFT |  DOWN  |  RIGHT  |
+------------------------------------------------------------------------------------------
+```
+
 # zmk-config
 This is the ZMK-Config repo for the Polarity works BT60 keyboard, with this you can customise your layout and keymap to suit your exact needs.
 We have provided base keymaps for the following layouts on the soldered version: ANSI, ISO, Split backspace and right shift, Tsangan and all 1u bottom rows. These can be accessed by choosing the appropriate branch. The hotswap version has one fork which already includes support for split backspace however it is not bound to anything useful thus you will need to fork and customise to your taste
