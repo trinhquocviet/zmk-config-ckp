@@ -27,10 +27,10 @@
 		};
 		raise {
 			bindings = <
-				&kp K_PWR &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &kp DEL &none
-				&none &none &none &none &none &none &none &none &kp INS &none &kp PSCRN &kp SLCK &kp PAUSE_BREAK &rgb_ug RGB_TOG
-				&kp CAPS  &none &none &none &none &none &none &none &none &none &kp HOME  &kp PG_UP   &bootloader
-				&none      &none &none &none &none &bl BL_TOG &bl BL_INC &bl BL_DEC &none &kp END &kp PG_DN  &none &none
+				&kp K_PWR &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &none &none
+				&none &none &none &none &none &none &none &none &none &none &kp PSCRN &kp SLCK &kp PAUSE_BREAK &rgb_ug RGB_TOG
+				&kp CAPS  &none &none &none &none &none &none &none &none &kp INS &kp HOME  &kp PG_UP   &bootloader
+				&none      &none &none &none &none &bl BL_TOG &bl BL_INC &bl BL_DEC &kp DEL &kp END &kp PG_DN  &none &none
 				&bt BT_PRV &bt BT_NXT &bt BT_CLR              &none                            &none   &none   &sys_reset &none
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
