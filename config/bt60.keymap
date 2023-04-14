@@ -19,7 +19,7 @@
 				// | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |    BSLH |
 				// | CAPS  |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |        ENTER |
 				// |  SHIFT    |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  | /   |    UP    | DEL |
-				// |  CTL  |  ALT  |  CMD  |            SPACE               | 1  |  LEFT |  DOWN  |  RIGHT  |
+				// |  CTL  |  ALT  |  CMD  |          SPACE           | RAISE_LAYER | LEFT | DOWN |  RIGHT  |
 				// ------------------------------------------------------------------------------------------
 			bindings = <
 				&kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp  N8   &kp  N9 &kp  N0  &kp MINUS &kp EQUAL &kp BSPC &kp GRAVE
@@ -31,11 +31,11 @@
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 		raise {
-        // ------------------------------------------------------------------------------------------
+				// ------------------------------------------------------------------------------------------
 				// |     | F1  | F2  | F3  | F4  | F5  | F6  | F7  | F8  | F9  | F10 | F11 | F12 |      |   |
 				// |      | BT0 | BT1 | BT2 |     |     |     |     |     |     | PRI | SLC | PAU | RGB_TOG |
 				// | CAPS  |     |     |     |     |     |     |     |     | INS | HOME| PGUP |  BOOTLOADER |
-				// |           |     |     |    |    | BLTOG | BL+ | BL- | DEL | END | PGDN |         |     |
+				// |           |     |    |    |    | BLTOG | BL+ | BL- | DEL | END | PGDN |   | LOCK_LAYER |
 				// | BTPRV | BTNXT | BTCLR |                                |    |       | RESET  |         |
 				// ------------------------------------------------------------------------------------------
 			bindings = <
@@ -48,6 +48,13 @@
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
     lock_layer {
+				// ------------------------------------------------------------------------------------------
+				// |     |     |     |     |     |     |     |     |     |     |     |     |     |      |   |
+				// |      |     |     |     |     |     |     |     |     |     |     |     |     |         |
+				// |       |     |     |     |     |     |     |     |     |     |     |      |             |
+				// |           |     |    |    |    |       |     |     |     |     |      |   |            |
+				// |      |       |       |                                 | UNLOCK_LAYER |   |    |       |
+				// ------------------------------------------------------------------------------------------
 			bindings = <
 				&none &none &none &none &none &none &none &none &none &none &none &none &none &none &none
 				&none &none &none &none &none &none &none &none &none &none &none &none &none &none
@@ -57,6 +64,13 @@
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
+				// ------------------------------------------------------------------------------------------
+				// |     |     |     |     |     |     |     |     |     |     |     |     |     |      |   |
+				// |      |     |     |     |     |     |     |     |     |     |     |     |     |         |
+				// |       |     |     |     |     |     |     |     |     |     |     |      |             |
+				// |          |     |    |     |    |     |     |     |     |     |     |   | DEFAULT_LAYER |
+				// |      |       |       |                                  |       |      |       |       |
+				// ------------------------------------------------------------------------------------------
     lock_layer_w_exit {
 			bindings = <
 				&none &none &none &none &none &none &none &none &none &none &none &none &none &none &none
