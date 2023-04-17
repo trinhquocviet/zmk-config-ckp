@@ -13,7 +13,7 @@
 #include "pinctrl.dtsi"
 
 / {
-	model = "Zaki's BT60v2";
+	model = "BT60";
 	compatible = "polarityworks,bt60v2";
 
 	chosen {
